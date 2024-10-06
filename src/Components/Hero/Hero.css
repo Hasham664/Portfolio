@@ -1,0 +1,89 @@
+.hero-sec {
+  text-align: center;
+  margin-top: 40px;
+}
+.hero-sec img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 200px;
+}
+.hero-sec span{
+      background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-sec h1 {
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 70px;
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 12px;
+}
+
+.hero-sec p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  max-width: 800px;
+  margin: auto;
+  padding-top: 15px;
+}
+.hero-btns{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.hero-btns button.connect {
+  padding: 20px 30px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+.hero-btns button.connect:hover {
+  border: 2px solid white;
+}
+.hero-btns button.resume {
+  background-color: transparent;
+  color: white;
+  padding: 20px 55px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+.hero-btns button.resume:hover {
+  border-color: #b415ff;
+
+}
+
+@media all and (max-width:670px){
+  .hero-sec h1 {
+    font-size: 52px;
+    line-height: 55px;
+}
+}
+@media all and (max-width:540px){
+  .hero-sec h1{
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 300px;
+  }
+  .hero-sec p{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .hero-btns button.connect {
+    padding: 20px 20px;
+    font-size: 14px;
+  }
+  .hero-btns button.resume{
+        padding: 20px 30px;
+        font-size: 15px;
+  }
+}

@@ -1,0 +1,108 @@
+/* Navbar basic styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+     padding-bottom: 5px;
+   border-bottom: 2px solid transparent;
+color: white;
+cursor: pointer;
+}
+.nav-links li:hover{
+   border-bottom: 2px solid white;
+   padding-bottom: 5px;
+
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.hamburger i {
+  color: white;
+  font-size: 2rem;
+}
+/* Hasham  */
+.btns {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+.btns img {
+  padding-right: 15px;
+  width: 62px;
+}
+
+.btns button.demo {
+  padding: 15px 20px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+  border: none;
+}
+.btns button.demo:hover {
+  transform: scale(1.05);
+}
+.phone {
+  display: none;
+}
+/* Hasham  */
+/* Mobile Responsive */
+@media screen and (max-width: 824px) {
+  .btns button.demo {
+    display: none;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    position: absolute;
+    top: 0;
+    background-color: #1f0016;
+    width: 300px;
+    height: 100%;
+    transition: right 0.4s !important;
+    right: 0px;
+    padding-top: 30px;
+  }
+
+  .nav-links-mobile li {
+    padding: 20px 30px;
+    /* margin: 0.6rem 0; */
+    padding-bottom: 10px;
+    color: white;
+    list-style: none;
+  }
+  .nav-links-mobile a {
+    text-decoration: none;
+    color: white;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 20px;
+  }
+}
+
+
